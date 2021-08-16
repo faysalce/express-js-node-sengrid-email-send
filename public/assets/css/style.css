@@ -1,3 +1,6 @@
+:root {
+    --fw-open-sans: 'Poppins', sans-serif;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Lato', sans-serif;
@@ -10,6 +13,10 @@ img {
 iframe {
     width: 560px;
     height: 315px;
+}
+
+.fw-open-sans {
+    font-family: var(--fw-open-sans);
 }
 
 
@@ -473,6 +480,10 @@ section#solar-package h2 {
     padding: 0px 30px;
     text-align: center;
 }
+.mi-solar-item {
+    font-family: var(--fw-open-sans);
+    margin-bottom: 30px;
+}
 
 .solar-item:before {
     content: '';
@@ -489,11 +500,23 @@ section#solar-package h2 {
     display: none;
 }
 
-.solar-item img {
-    height: 250px;
+.sola-item-image {
+    position: relative;
+    height: 240px;
+    margin-bottom: 28px;
+}
+.sola-item-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.solar-item a {
+/*.solar-item a {
     background: #ffd600;
     text-decoration: none;
     padding: 5px 25px;
@@ -503,43 +526,43 @@ section#solar-package h2 {
     border-radius: 5px;
     box-shadow: 0px 5px 10px #000;
     font-weight: 300;
+}*/
+
+.btn-kw {
+    background-color: #ffd600;
+    font-weight: 600;
+    color: #212529 !important;
+    min-width: 94px;
+    margin-bottom: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .25);
 }
 
-.solar-item p {
-    font-weight: 700;
-    font-family: 'Lato', 'Open Sans';
-    text-transform: capitalize;
-    font-size: 22px;
+.btn-kw:active, .btn-kw:focus {
+    box-shadow: none !!important;
 }
 
-.solar-item input[type="checkbox"],
-.selected-people input[type="checkbox"] {
-    position: relative;
-    margin-right: 15px;
-    width: 25px;
-    height: 25px;
+.solar-item .solar-item-title {
+    font-family: var(--fw-open-sans);
+    font-weight: 600;
+    color: #1e2126;
+    margin-bottom: 20px;
 }
 
+.form-check-kw .check-kw-label {
+    color: #51a1b8;
+    padding-left: .25rem;
+}
 
-/* .solar-item input[type="checkbox"]::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    left: 0;
-    top: 0;
-    visibility: visible;
-    opacity: 1;
-    display: block;
-} */
-
-.solar-item span,
-.selected-people span {
-    display: inline-block;
-    vertical-align: super;
-    color: #1aaed2;
-    font-size: 20px;
+.btn-site-sceondary {
+    font-family: var(--fw-open-sans);
+    background-color: #0bb6d4;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1.125rem;
+}
+.btn-site-sceondary::active, 
+.btn-site-sceondary::focus {
+    box-shadow: none !!important;
 }
 
 
@@ -608,17 +631,42 @@ section#consumption-section {
     padding: 40px 0px;
     text-align: center;
 }
-
-section#quarterly-section input {
-    border: none;
-    padding: 10px 0px;
-    outline: none;
-    text-indent: 5px;
-    width: 250px;
+.mi-expenses-block {
+    max-width: 938px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.mi-expenses-block .expenses-heading {
+    font-weight:  600;
+    margin-bottom: 28px;
+}
 .selected-people span {
     color: #000;
+}
+.mi-expenses-block .form-control {
+    color: #5d5e60;
+    border: 1px solid #d5dee5 !important;
+}
+.mi-expenses-block .form-control:hover, 
+.mi-expenses-block .form-control:focus {
+    border-color: #6f7071 !important;
+}
+.mi-people-check .mi-people-check-label {
+    padding-left: .25rem;
+}
+.radio-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right:  10px;
+}
+.radio-lists li {
+    padding-left: 10px;
+    padding-right:  10px;
 }
 
 section#consumption-section a {
@@ -938,6 +986,42 @@ p.copyright {
     margin-left: 45px;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+
+
+/*
+    Footer new 
+*/
+.footer {
+    font-size:  var(--fw-open-sans);
+}
+.footer-dark {
+    background-color: #212429 !important;
+    color: #fff;
+}
+.footer-cm-item {
+    text-align: center;
+}
+.footer-cm-icon {
+    margin-bottom: 20px;
+}
+.footer-cm-label {
+    color: #5c5f64;
+}
+.foo-licence-text {
+    font-weight: 600;
+    color: #ffd600;
+}
+.footer-topper {
+    padding: 60px 0;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .075);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-cm-txt {
+    font-size: 1.25rem;
 }
 
 

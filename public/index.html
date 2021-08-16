@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Open+Sans:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- resource css link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -205,39 +209,63 @@
                     </h2>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
-                            <div class="solar-item item-1">
-                                <img src="assets/img/Web17.png" alt="s-1">
-                                <a href="#">6.66kw</a>
-                                <p>from $2,577</p>
-                                <input type="checkbox"><span>Compare</span>
+                            <div class="solar-item mi-solar-item item-1">
+                                <div class="sola-item-image">
+                                    <img src="assets/img/Web17.png" alt="s-1">
+                                </div>
+                                <a href="#" class="btn btn-kw">6.66kw</a>
+                                <h3 class="solar-item-title">From $2,577</h3>
+                                <div class="form-check-kw">
+                                    <input type="checkbox" class="check-kw-checkbox" id="check-kw-1">
+                                    <label class="check-kw-label" for="check-kw-1">Compare</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-6">
-                            <div class="solar-item">
-                                <img src="assets/img/Web16.png" alt="s-1">
-                                <a href="#">8.88kw</a>
-                                <p>from $3,896</p>
-                                <input type="checkbox"><span>Compare</span>
+                            <div class="solar-item mi-solar-item item-2">
+                                <div class="sola-item-image">
+                                    <img src="assets/img/Web16.png" alt="s-2">
+                                </div>
+                                <a href="#" class="btn btn-kw">8.88kw</a>
+                                <h3 class="solar-item-title">From $3,896</h3>
+                                <div class="form-check-kw">
+                                    <input type="checkbox" class="check-kw-checkbox" id="check-kw-2">
+                                    <label class="check-kw-label" for="check-kw-2">Compare</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-6">
-                            <div class="solar-item">
-                                <img src="assets/img/Web15.png" alt="s-1">
-                                <a href="#">9.36kw</a>
-                                <p>from $4,277</p>
-                                <input type="checkbox"><span>Compare</span>
+                            <div class="solar-item mi-solar-item item-3">
+                                <div class="sola-item-image">
+                                    <img src="assets/img/Web15.png" alt="s-3">
+                                </div>
+                                <a href="#" class="btn btn-kw">9.36kw</a>
+                                <h3 class="solar-item-title">From $4,277</h3>
+                                <div class="form-check-kw">
+                                    <input type="checkbox" class="check-kw-checkbox" id="check-kw-3">
+                                    <label class="check-kw-label" for="check-kw-3">Compare</label>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-6">
-                            <div class="solar-item">
-                                <img src="assets/img/Web14.png" alt="s-1">
-                                <a href="#">13.32kw</a>
-                                <p>from $4,977</p>
-                                <input type="checkbox"><span>Compare</span>
+                            <div class="solar-item mi-solar-item item-4">
+                                <div class="sola-item-image">
+                                    <img src="assets/img/Web14.png" alt="s-4">
+                                </div>
+                                <a href="#" class="btn btn-kw">13.32kw</a>
+                                <h3 class="solar-item-title">From $4,977</h3>
+                                <div class="form-check-kw">
+                                    <input type="checkbox" class="check-kw-checkbox" id="check-kw-4">
+                                    <label class="check-kw-label" for="check-kw-4">Compare</label>
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <a href="" class="btn btn-site-sceondary btn-compare">Click to Compare</a>
                         </div>
                     </div>
                 </div>
@@ -287,13 +315,15 @@
     <!-- ==================== system section end ===================== -->
 
     <!-- ==================== quarterly section start ===================== -->
-    <section id="quarterly-section">
+    <section id="quarterly-section" class="fw-open-sans">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="assets/img/Web13.png" alt="dolor img">
-                    <h4>Your quarterly Electrically expenses</h4>
-                    <input type="text" class="input-box">
+                    <div class="mi-expenses-block">
+                        <img src="assets/img/Web13.png" alt="dolor img">
+                        <h3 class="h2 expenses-heading">Your quarterly Electrically expenses</h3>
+                        <input type="text" value="2000" class="form-control">
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,63 +331,77 @@
     <!-- ==================== quarterly section end ===================== -->
 
     <!-- ==================== people section start ===================== -->
-    <section id="people-section">
+    <section id="people-section" class="fw-open-sans">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="assets/img/Web12.png" alt="people img">
-                    <h4>Number of people in house:</h4>
-
-                    <div class="row">
-                        <div class="col-md-2 offset-md-3">
-                            <div class="selected-people">
-                                <input type="checkbox"> <span>Less than 3</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-                            <div class="selected-people">
-                                <input type="checkbox"> <span>4 - 6 people</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-                            <div class="selected-people">
-                                <input type="checkbox"> <span>7 - 10 people</span>
-                            </div>
-                        </div>
+                    <div class="mi-expenses-block">
+                        <img src="assets/img/Web12.png" alt="people img">
+                        <h3 class="h2 expenses-heading">Number of people in house:</h3>
                     </div>
-
                 </div>
             </div>
+            <ul class="radio-lists">
+                <li>
+                    <div class="mi-people-check">
+                        <input class="mi-people-check-input" type="radio" name="numPeopleRadio" id="radio-num-people-1" checked>
+                        <label class="mi-people-check-label" for="radio-num-people-1">
+                            Less than 3
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mi-people-check">
+                        <input class="mi-people-check-input" type="radio" name="numPeopleRadio" id="radio-num-people-2">
+                        <label class="mi-people-check-label" for="radio-num-people-2">
+                            4 - 6 people
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mi-people-check">
+                        <input class="mi-people-check-input" type="radio" name="numPeopleRadio" id="radio-num-people-3">
+                        <label class="mi-people-check-label" for="radio-num-people-3">
+                            7 - 10 people
+                        </label>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- ==================== people section end ===================== -->
 
     <!-- ==================== comsumption section start ===================== -->
-    <section id="consumption-section">
+    <section id="consumption-section" class="fw-open-sans">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="assets/img/Web11.png" alt="consumption img">
-                    <h4>Does your home use extra consumption <br> (i.e Swimming pool pump, integrated Air con)</h4>
-
-                    <div class="row">
-                        <div class="col-md-2 offset-md-4">
-                            <div class="selected-people">
-                                <input type="checkbox"> <span>Yes</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-                            <div class="selected-people">
-                                <input type="checkbox"> <span>No</span>
-                            </div>
-                        </div>
+                    <div class="mi-expenses-block">
+                        <img src="assets/img/Web11.png" alt="consumption img">
+                        <h3 class="h2 expenses-heading">Does your home use extra consumption <br>(i.e Swimming pool pump, integrated Air con)</h3>
                     </div>
-
-                    <a href="#">Click to see the result</a>
                 </div>
+            </div>
+            <ul class="radio-lists">
+                <li>
+                    <div class="mi-people-check">
+                        <input class="mi-people-check-input" type="radio" name="consumptionRadio" id="radio-consumption-1">
+                        <label class="mi-people-check-label" for="radio-consumption-1">
+                            Yes
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="mi-people-check">
+                        <input class="mi-people-check-input" type="radio" name="consumptionRadio" id="radio-consumption-2">
+                        <label class="mi-people-check-label" for="radio-consumption-2">
+                            No
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-center">
+                <a href="" class="btn btn-site-sceondary">Click to see the result</a>
             </div>
         </div>
     </section>
@@ -551,7 +595,7 @@
     <!-- ==================== certificate section end ===================== -->
 
     <!-- ==================== Footer section start ===================== -->
-    <section id="footer-section">
+    <!-- <section id="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -592,7 +636,7 @@
                     <div class="footer-right">
                         <div class="row">
                             <div class="col-lg-3">
-                                <!-- <div class="right-one">
+                                <div class="right-one">
                                     <h3>Useful Links</h3>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -637,7 +681,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
 
                             <div class="col-lg-9 offset-lg-3">
@@ -662,7 +706,70 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <footer class="footer footer-dark">
+        <div class="footer-topper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-cm-item">
+                            <div class="footer-cm-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffd600" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                            </div>
+                            <div class="footer-cm-icon">
+                                <h6 class="footer-cm-label">CALL US NOW</h6>
+                                <div class="footer-cm-txt">
+                                    1300 365 699
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-cm-item">
+                            <div class="footer-cm-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffd600" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                            </div>
+                            <div class="footer-cm-icon">
+                                <h6 class="footer-cm-label">Find Us</h6>
+                                <div class="footer-cm-txt">
+                                    <address class="mb-0">
+                                        Unit 4/1645 Ipswich Rd,
+                                        Rocklea QLD 4106
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-cm-item">
+                            <div class="footer-cm-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffd600" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                </svg>
+                            </div>
+                            <div class="footer-cm-icon">
+                                <h6 class="footer-cm-label">Email US</h6>
+                                <div class="footer-cm-txt">
+                                    <a href="">info@skysolarenergy.com.au</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <span class="foo-copyright-text">Copyright &copy; 2007-2021 Sky Solar Energy Pty Ltd.</span>
+                <span class="foo-licence-text">Licence no: QLD-87816|NSW-297410C|VIC-28296|SA-290617</span>
+            </div>
+        </div>
+    </footer>
     <!-- ==================== Footer section end ===================== -->
 
 
