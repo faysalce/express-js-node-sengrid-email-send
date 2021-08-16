@@ -1,0 +1,1016 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+
+/* ul {
+    padding: 0;
+    display: inline;
+} */
+
+
+/* ul li {
+    display: inline-block;
+    position: relative;
+} */
+
+a {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+ul li a {
+    transition: 0.5s!important;
+    color: #fff!important;
+    text-decoration: none!important;
+    padding: 10px 12px!important;
+    display: inline-block!important;
+}
+
+ul li a:hover,
+ul li a.active {
+    color: #ffd600!important;
+}
+
+#header-section ul li ul {
+    position: absolute;
+    width: 170px;
+    background: #262626;
+    top: 70px;
+    left: 0;
+    padding-left: 5px;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+#header-section ul li:hover ul {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+    transition: 0.3s ease;
+}
+
+input:hover {
+    border: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+h2 span {
+    font-weight: 800;
+    color: #1aaed2;
+    text-transform: capitalize;
+}
+
+p span {
+    color: #1aaed2;
+}
+
+h4 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*Popup */
+
+.modal-body {
+    padding: 0;
+}
+
+button.close {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    background: #1a4e7b;
+    color: #fff;
+    transform: scaleX(-1);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+}
+
+button.close:focus {
+    outline: none;
+    ;
+}
+
+.modal-dialog {
+    max-width: 600px!important;
+}
+
+.modal-body h3 {
+    margin-top: 50px;
+    font-size: 17px;
+    text-align: center!important;
+    font-weight: 600;
+}
+
+.modal-body h3 a {
+    color: #1a4e7b!important;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.modal-body p {
+    margin-left: 20px;
+}
+
+form label,
+form input {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+.modal-body span {
+    color: red!important;
+}
+
+form input,
+form input:hover,
+form input:focus {
+    border: 1px solid #ddd!important;
+    outline: inherit!important;
+    box-shadow: none!important;
+}
+
+form textarea {
+    user-select: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ddd;
+    text-indent: 10px;
+}
+
+form textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+form button.btn {
+    background: #efeeee;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+}
+
+
+/* div#popup-box {
+    transform: scaleX(-1);
+    top: 50%;
+    left: 50%;
+    display: block;
+    z-index: 999;
+} */
+
+
+/*
+======================
+Header section 
+======================
+*/
+
+nav#nav-section {
+    display: inline-block;
+    background: transparent!important;
+}
+
+.dropdown-menu {
+    background: #262626;
+    margin-top: 0;
+}
+
+a.dropdown-item.active,
+a.dropdown-item:hover {
+    background: inherit;
+}
+
+section#header-section {
+    background: #262626;
+    color: #fff;
+    padding: 20px 0px;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 99; */
+    /* box-shadow: 0px 0px 11px #565454; */
+}
+
+.header-left a.logo {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#header-section img {
+    width: 150px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-left .search-section input[type="text"] {
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 60px;
+    height: 30px;
+    text-indent: 10px;
+    width: 150px;
+    font-size: 15px;
+    position: relative;
+}
+
+.search-section {
+    display: inline-block;
+    position: absolute;
+    right: 12%;
+    top: 10px;
+    display: none;
+}
+
+.header-left {
+    position: relative;
+    text-align: center;
+}
+
+.header-right input[type="text"] {
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    height: 30px;
+    text-indent: 10px;
+    width: 150px;
+    font-size: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+
+
+/* .header-right .search-bar {
+    position: relative;
+}
+
+.header-right .search-bar::after {
+    content: '\f002';
+    position: absolute;
+    right: 10px;
+    font-weight: 700;
+    font-family: 'Font Awesome 5 Free';
+    top: 20px;
+    color: #b9b9b9;
+    font-size: 14px;
+} */
+
+.call-section span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* .call-section {
+    float: right;
+} */
+
+.call-section p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+}
+
+.call-section p i.fas.fa-phone-alt {
+    left: -30px;
+    top: -2px;
+    position: absolute;
+    font-size: 25px;
+    color: #ffd600;
+}
+
+
+/*
+===========================
+Banner section 
+===========================
+*/
+
+#banner-section {
+    background-image: url('../img/solar.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    transform: scaleX(-1);
+    border-bottom: 10px solid #ffd600;
+}
+
+section#banner-section::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+#banner-section img {
+    position: relative;
+    width: 350px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.banner-content {
+    transform: scaleX(-1);
+}
+
+.banner-text {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 1px;
+}
+
+h1,
+.banner-text p span {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+.banner-text p {
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin-left: 100px;
+}
+
+h1 span,
+.banner-text p span {
+    color: #ffd600;
+}
+
+.banner-text a {
+    color: #fff;
+    text-decoration: none;
+    background: #1aaed2;
+    padding: 10px 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+    transition: 0.3s;
+    letter-spacing: 0px;
+    position: absolute;
+    left: 30%;
+}
+
+.banner-text a:focus {
+    box-shadow: none;
+    ;
+}
+
+
+/*
+===========================
+Solar section
+===========================
+*/
+
+section#solar-energy {
+    padding: 50px 0px;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 15px;
+    font-family: "Lato", 'Open Sans';
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background-color: #ffd600;
+    left: 0;
+    bottom: 0;
+}
+
+.solar-energy-right {
+    margin-top: 40px;
+}
+
+#solar-energy p.s,
+.system-left p span.s {
+    font-style: italic!important;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+
+/*
+===========================
+solar energy 
+===========================
+*/
+
+#solar-energy p,
+.system-left p,
+.payment-plan-right p,
+section#purchase-decision p {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+section#solar-package {
+    background: #ececec;
+    padding: 50px 0px;
+}
+
+section#solar-package h2 {
+    margin-bottom: 40px;
+}
+
+.solar-item {
+    position: relative;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.solar-item:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    background: #b3b3b3;
+    top: 40%;
+    transform: translateY(-50%);
+    left: -15px;
+}
+
+.solar-item.item-1::before {
+    display: none;
+}
+
+.solar-item img {
+    height: 250px;
+}
+
+.solar-item a {
+    background: #ffd600;
+    text-decoration: none;
+    padding: 5px 25px;
+    display: inline-block;
+    margin: 25px 0px 15px 0px;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #000;
+    font-weight: 300;
+}
+
+.solar-item p {
+    font-weight: 700;
+    font-family: 'Lato', 'Open Sans';
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.solar-item input[type="checkbox"],
+.selected-people input[type="checkbox"] {
+    position: relative;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* .solar-item input[type="checkbox"]::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+} */
+
+.solar-item span,
+.selected-people span {
+    display: inline-block;
+    vertical-align: super;
+    color: #1aaed2;
+    font-size: 20px;
+}
+
+
+/*
+===========================
+Sponser section
+===========================
+*/
+
+section#sponser-section {
+    padding: 50px 0px;
+    background: #1a7a9a;
+    text-align: center;
+}
+
+#sponser-section img {
+    max-width: 200px;
+}
+
+
+/*
+===========================
+System section
+===========================
+*/
+
+section#system-section {
+    position: relative;
+    display: flex;
+}
+
+.system-right {
+    width: 50%;
+}
+
+.system-left {
+    width: 50%;
+    padding: 0px 30px 0px 120px;
+}
+
+.system-left h2 {
+    margin-top: 80px;
+}
+
+
+/*
+===========================
+Quarterly section
+===========================
+*/
+
+section#quarterly-section img,
+section#people-section img,
+section#consumption-section img {
+    max-width: 70px;
+}
+
+section#quarterly-section,
+section#consumption-section {
+    background-color: #e9f4ff;
+}
+
+section#quarterly-section,
+section#people-section,
+section#consumption-section {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+section#quarterly-section input {
+    border: none;
+    padding: 10px 0px;
+    outline: none;
+    text-indent: 5px;
+    width: 250px;
+}
+
+.selected-people span {
+    color: #000;
+}
+
+section#consumption-section a {
+    color: #fff;
+    text-decoration: none;
+    background: #1aaed2;
+    padding: 10px 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.3s;
+    letter-spacing: 0px;
+    margin-top: 30px;
+}
+
+
+/*
+===========================
+Payment plan section
+===========================
+*/
+
+section#payment-plan {
+    display: flex;
+}
+
+.payment-plan-2,
+section#solar-power-section {
+    border-bottom: 15px solid #ffd600;
+}
+
+.payment-plan-left {
+    width: 50%;
+}
+
+.payment-plan-right {
+    width: 50%;
+    padding: 0px 115px;
+    padding-top: 70px;
+}
+
+.payment-plan-right p {
+    margin-top: 15px;
+}
+
+
+/*
+===========================
+Power bill section 
+===========================
+*/
+
+#power-bills {
+    padding: 30px 0px;
+    background: #1a7a9a;
+    color: #fff;
+    margin-top: -40px;
+    z-index: 1;
+    position: relative;
+}
+
+#power-bills h3 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.power-bill-right {
+    text-align: center;
+}
+
+.power-bill-right>p {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.power-bill-right p span {
+    color: #fff;
+    font-size: 35px;
+}
+
+.power-bill-right p i {
+    color: #ffd600;
+    font-size: 40px;
+    margin-left: -60px;
+    margin-right: 10px;
+}
+
+
+/*
+===========================
+Solar power section 
+===========================
+*/
+
+section#solar-power-section {
+    padding: 60px 0px;
+}
+
+section#solar-power-section h2 {
+    margin-bottom: 30px;
+}
+
+.solar-power-item {
+    text-align: center;
+    position: relative;
+}
+
+.solar-power-item p {
+    text-align: left!important;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+.solar-power-item img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.solar-power-item h5 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.solar-power-item:before {
+    /* background: url(../img/arrow.png) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    box-shadow: -10px 0 15px -17px inset;
+    left: 0px;
+    transform: scaleX(-1);
+}
+
+.solar-power-item:before,
+.solar-power-item:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+.solar-power-item.last-item::after {
+    box-shadow: 10px 0 17px -18px inset;
+    right: -15px;
+    transform: scaleX(-1);
+}
+
+
+/*
+===========================
+Purchase section section 
+===========================
+*/
+
+section#purchase-decision {
+    padding: 60px 0px;
+}
+
+section#purchase-decision h3 {
+    color: #fff;
+    padding: 60px 110px;
+}
+
+.purchase-decision-2 {
+    background: #1a7a9a;
+}
+
+
+/*
+===========================
+certificate section 
+===========================
+*/
+
+section#certificate-section {
+    padding: 60px 0px;
+}
+
+
+/*
+===========================
+Footer section
+===========================
+*/
+
+section#footer-section {
+    background: #262626;
+    color: #fff;
+    padding: 60px 0px;
+}
+
+.footer-left {
+    background: #fff;
+    color: #000;
+}
+
+div#nav-home,
+div#nav-profile {
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+div#nav-home h3,
+div#nav-profile h3 {
+    font-weight: 500;
+    color: #656262;
+    text-transform: capitalize;
+}
+
+div#nav-home p,
+div#nav-profile p {
+    color: #656262;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+div#nav-home h3 span,
+div#nav-profile h3 span {
+    color: #ffd600;
+}
+
+.footer-left nav i {
+    margin-right: 5px;
+}
+
+button#nav-home-tab,
+button#nav-profile-tab {
+    width: 50%;
+    outline: none;
+    background: #ffd600;
+    border: none;
+    border-radius: 0;
+    color: #444343;
+    font-weight: 600;
+}
+
+button.nav-link.active {
+    background: #fff!important;
+}
+
+.footer-left input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: #ddd;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.footer-left .tab-content input[type="submit"] {
+    margin: 0;
+    background: #ffd600;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-left .tab-content span.req {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+}
+
+.footer-left .tab-content span.req i {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.footer-right h3 {
+    text-transform: uppercase;
+}
+
+.footer-right ul {
+    padding: 0;
+}
+
+.footer-right ul li {
+    display: block!important;
+}
+
+.footer-right ul li a {
+    font-size: 18px!important;
+}
+
+
+/* .footer-right ul li ul {
+    padding-left: 20px!important;
+    display: block;
+}
+
+.footer-right ul li ul li a {
+    font-size: 16px!important;
+} */
+
+.footer-right ul li a i {
+    margin-right: 10px;
+}
+
+.right-one {
+    margin-left: 35px;
+}
+
+p.copyright {
+    margin-top: 120px;
+    margin-left: 45px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+
+/*
+===========================
+scroll to top 
+===========================
+*/
+
+.scrollToTop {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    z-index: 999;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+    background: #636262;
+    text-align: center;
+    font-size: 16px;
+}
+
+.scrollToTop:hover {
+    opacity: 1!important;
+}
+
+.scrollToTop.active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    animation: bounceInDown 2s;
+    -webkit-animation: bounceInDown 2s;
+    -moz-animation: bounceInDown 2s;
+}
+
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px)
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown
+}
+
+.fa-angle-up {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.7;
+}
+
+
+/*
+==================================
+Scroll to top css end
+===================================
+*/
